@@ -32,7 +32,7 @@ def app():
 
     def in_recorder_factory() -> MediaRecorder:
         return MediaRecorder(
-            str(in_file), format="mp4" #BACKWARDS HERE
+            str(in_file), format="flv" #BACKWARDS HERE
         )  # HLS does not work. See https://github.com/aiortc/aiortc/issues/331
 
     def out_recorder_factory() -> MediaRecorder:
@@ -61,7 +61,6 @@ def app():
             st.download_button(
                 "Download the recorded video with video filter", f, "output.flv"
             )
-    st.exception(exception)
 
 if __name__ == "__main__":
     app()
