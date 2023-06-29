@@ -88,7 +88,7 @@ def main():
         
         except Exception as e:
             st.error(f"Error: {e}")
-    #        
+           
     col1, col2, col3 = st.columns(3)
     col1.metric(label="Dataset size", value=csv_size)
     col2.metric(label="Number of Realationships", value=num_relationships)
