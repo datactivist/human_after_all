@@ -36,7 +36,7 @@ def app():
         )  # HLS does not work. See https://github.com/aiortc/aiortc/issues/331
 
     def out_recorder_factory() -> MediaRecorder:
-        return MediaRecorder(str(out_file), format="flv")
+        return MediaRecorder(str(out_file), format="mp4")
 
     webrtc_streamer(
         key="record",
