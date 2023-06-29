@@ -64,10 +64,9 @@ def main():
     st.title("Complexity Detector")
     st.subheader('Find out how complex your dataset is !')
 
-    st.text_area('instructions', '''You're probably here because you know you can do something with your data. 
-    A
-    ''')
+    st.markdown('You're probably here because you told yourself :blue["I can do something with this data"] :man_tipping_hand: and you're right. But before, we need to know how complex your data is, so we now what we have to deal with :boxing_glove:')
 
+    
     # File selection
     uploaded_file = st.file_uploader("Upload CSV File", type=["csv"])
     
