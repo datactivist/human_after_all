@@ -18,7 +18,7 @@ def main():
 
     
     #add some animation to make the user feel he will be using a very special kind of artefact.
-    rain(
+    #rain(
     emoji="🕺",
     font_size=40,
     falling_speed=4,
