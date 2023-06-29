@@ -12,7 +12,7 @@ def main():
     st.title("Welcome to the Human-Data Interaction simulator")
     #add a subheader
     st.subheader('Transform your data into a playful and intuitive game')
-    st_lottie("https://assets3.lottiefiles.com/packages/lf20_pWTOxQsYjN.json", height = 400)
+    st_lottie("https://assets3.lottiefiles.com/packages/lf20_pWTOxQsYjN.json", height = 500)
     
 
 
