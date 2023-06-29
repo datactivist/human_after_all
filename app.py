@@ -18,12 +18,8 @@ def main():
 
     
     #add some animation to make the user feel he will be using a very special kind of artefact.
-    #rain(
-    emoji="🕺",
-    font_size=40,
-    falling_speed=4,
-    animation_length="infinite",
-)
+    #rain(emoji="🕺",font_size=40,falling_speed=4,animation_length="infinite")
+    
     #add a logo
     add_logo("gallery/logo_dataflow_vf.png", height=100)
 
