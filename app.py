@@ -21,7 +21,7 @@ def main():
 )
     want_to_contribute = st.button("I want to contribute!")
     if want_to_contribute:
-        switch_page("Let's go ▶️")
+        switch_page("Let's go ▶️ !")
 
 if __name__ == "__main__":
     main()
