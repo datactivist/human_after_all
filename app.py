@@ -13,8 +13,8 @@ def main():
     st_player("https://soundcloud.com/ristanuizuksh/sets/disclosure-you-and-me-flume")
 
     rain(
-    emoji="❤️",
-    font_size=54,
+    emoji="🕺",
+    font_size=40,
     falling_speed=4,
     animation_length="infinite",
 )
