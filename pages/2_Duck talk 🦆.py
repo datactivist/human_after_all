@@ -68,9 +68,9 @@ def app():
             st.download_button(
                 "Download the recorded video with video filter", f, "output.flv"
             )
-    next_page = st.button("Next step ⏭️ !")
+    next_page = st.button("Meet your copilot ⏭️ !")
     if next_page:
-        switch_page("Duck talk 🦆")
+        switch_page("Meet Copilot 👩‍✈️")
 
 if __name__ == "__main__":
     app()
