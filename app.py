@@ -7,19 +7,27 @@ from streamlit_extras.switch_page_button import switch_page
 
 # Streamlit app
 def main():
+    #set title of the app
     st.title("Welcome to the Human-Data Interaction simulator")
-    st.subheader('Ready to dance with your data ?')
-    st.write('Hello and welcome to the Human-Data Interaction (HDI) simulator. Before we begin, take time to settle down, make yourself comfortable, listen to the music below')
-
-    # Embed a music from SoundCloud
-    st_player("https://soundcloud.com/ristanuizuksh/sets/disclosure-you-and-me-flume")
-
+    #add some animation to make the user feel he will be using a very special kind of artefact.
     rain(
     emoji="🕺",
     font_size=40,
     falling_speed=4,
     animation_length="infinite",
 )
+    #add a subheader
+    st.subheader('Ready to dance with your data ?')
+
+    #write the welcome text
+    st.write('Hello and welcome to the Human-Data Interaction (HDI) simulator. Before we begin, take time to settle down, make yourself comfortable, listen to the music below ⬇️')
+
+    # Add some ambiance sound
+    st_player("https://soundcloud.com/ristanuizuksh/sets/disclosure-you-and-me-flume")
+
+    #add some text
+    st.write('Feeling better ? Now you can start whenever you want !')
+    
     want_to_contribute = st.button("Begin 🍾 ! ")
     if want_to_contribute:
         switch_page("Let's go ▶️ !")
