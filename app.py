@@ -19,7 +19,7 @@ def main():
     falling_speed=4,
     animation_length="infinite",
 )
-    want_to_contribute = st.button("I want to contribute!")
+    want_to_contribute = st.button("Begin 🍾 ! ")
     if want_to_contribute:
         switch_page("Let's go ▶️ !")
 
