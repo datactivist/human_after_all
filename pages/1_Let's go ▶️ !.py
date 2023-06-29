@@ -74,13 +74,18 @@ def main():
 
             # Calculate CSV size
             csv_size = calculate_csv_size(file)
-            st.subheader("CSV Size")
-            st.write(f"The size of the dataset is: {csv_size}")
+            
+            #Former display of info
+            #st.subheader("CSV Size")
+            #st.write(f"The size of the dataset is: {csv_size}")
 
             # Extract number of relationships
             num_relationships = extract_relationships(file)
-            st.subheader("Number of Relationships")
-            st.write(f"The number of relationships in the dataset is: {num_relationships}")
+            
+            #Former display of infos
+            #st.subheader("Number of Relationships")
+            #st.write(f"The number of relationships in the dataset is: {num_relationships}")
+        
         except Exception as e:
             st.error(f"Error: {e}")
     #        
