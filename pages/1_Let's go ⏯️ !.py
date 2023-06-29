@@ -100,7 +100,7 @@ def main():
     
     next_page = st.button("Next step ⏭️ !")
     if next_page:
-        switch_page("Duck talk 🦆")
+        switch_page("Duck talk ")
 
 if __name__ == "__main__":
     main()
