@@ -8,7 +8,7 @@ def app():
     st.markdown('Corneille wrote in Polyeucte : "A raconter ses maux, souvent on les soigne", which means that talking to ourselves very often enlightens our problems and gives us key to solve them. Developers talk about the Rubber duck debugging technique 🦆')
     
     with st.echo():
-        st_lottie("https://assets5.lottiefiles.com/packages/lf20_V9t630.json")
+        st_lottie("https://assets7.lottiefiles.com/packages/lf20_Wb5prVKFMW.json")
 
 
 if __name__ == "__main__":
