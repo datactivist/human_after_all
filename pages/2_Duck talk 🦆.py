@@ -27,12 +27,12 @@ def app():
     if "prefix" not in st.session_state:
         st.session_state["prefix"] = str(uuid.uuid4())
     prefix = st.session_state["prefix"]
-    in_file = RECORD_DIR / f"{prefix}_input.flv"
-    out_file = RECORD_DIR / f"{prefix}_output.flv"
+    in_file = RECORD_DIR / f"{prefix}_input.mp4"
+    out_file = RECORD_DIR / f"{prefix}_output.mp4"
 
     def in_recorder_factory() -> MediaRecorder:
         return MediaRecorder(
-            str(in_file), format="flv" #BACKWARDS HERE
+            str(in_file), format="mp4" #BACKWARDS HERE
         )  # HLS does not work. See https://github.com/aiortc/aiortc/issues/331
 
     def out_recorder_factory() -> MediaRecorder:
@@ -54,12 +54,12 @@ def app():
     if in_file.exists():
         with in_file.open("rb") as f:
             st.download_button(
-                "Download the recorded video without video filter", f, "input.flv"
+                "Download the recorded video without video filter", f, "input.mp4"
             )
     if out_file.exists():
         with out_file.open("rb") as f:
             st.download_button(
-                "Download the recorded video with video filter", f, "output.flv"
+                "Download the recorded video with video filter", f, "output.mp4"
             )
 
 if __name__ == "__main__":
