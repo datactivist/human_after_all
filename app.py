@@ -10,7 +10,9 @@ from streamlit_lottie import st_lottie
 def main():
     #set title of the app
     st.title("Welcome to the Human-Data Interaction simulator")
-    st_lottie("https://assets3.lottiefiles.com/packages/lf20_pWTOxQsYjN.json", height = 200)
+    #add a subheader
+    st.subheader('Transform your data into a playful and intuitive game')
+    st_lottie("https://assets3.lottiefiles.com/packages/lf20_pWTOxQsYjN.json", height = 400)
     
 
 
@@ -24,9 +26,6 @@ def main():
 )
     #add a logo
     add_logo("gallery/logo_dataflow_vf.png", height=100)
-    
-    #add a subheader
-    st.subheader('Ready to dance with your data ?')
 
     #write the welcome text
     st.write('Hello and welcome to the Human-Data Interaction (HDI) simulator. Before we begin, take time to settle down, make yourself comfortable, listen to the music below ⬇️')
