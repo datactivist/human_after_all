@@ -1,6 +1,7 @@
 import streamlit as st 
 from streamlit_player import st_player
 from streamlit_extras.let_it_rain import rain
+from streamlit_extras.switch_page_button import switch_page
 
 
 
@@ -18,7 +19,9 @@ def main():
     falling_speed=4,
     animation_length="infinite",
 )
-
+    want_to_contribute = st.button("I want to contribute!")
+    if want_to_contribute:
+        switch_page("Let's go ▶️")
 
 if __name__ == "__main__":
     main()
