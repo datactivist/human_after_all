@@ -86,8 +86,8 @@ def main():
     #        
     col1, col2, col3 = st.columns(3)
     col1.metric(label="Dataset size", value=csv_size)
-    col2.metric(label="Number of Realationships", value={num_relationships})
-    col3.metric(label="Dataset complexity", value={num_relationships}/{csv_size}, delta=0)
+    col2.metric(label="Number of Realationships", value=num_relationships)
+    col3.metric(label="Dataset complexity", value=num_relationships/csv_size, delta=0)
     style_metric_cards()
 
 if __name__ == "__main__":
