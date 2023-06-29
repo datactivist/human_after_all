@@ -70,7 +70,7 @@ def app():
             )
     next_page = st.button("Meet your copilot ⏭️ !")
     if next_page:
-        switch_page("Meet Copilot 👩‍✈️")
+        switch_page("Meet Copilot👩‍✈️")
 
 if __name__ == "__main__":
     app()
