@@ -3,13 +3,18 @@ from streamlit_player import st_player
 from streamlit_extras.let_it_rain import rain
 from streamlit_extras.switch_page_button import switch_page
 from streamlit_extras.app_logo import add_logo
-
+from streamlit_lottie import st_lottie
 
 
 # Streamlit app
 def main():
     #set title of the app
     st.title("Welcome to the Human-Data Interaction simulator")
+    st_lottie("https://assets3.lottiefiles.com/packages/lf20_pWTOxQsYjN.json")
+    
+
+
+    
     #add some animation to make the user feel he will be using a very special kind of artefact.
     rain(
     emoji="🕺",
