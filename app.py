@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_player import st_player
 from streamlit_extras.let_it_rain import rain
 from streamlit_extras.switch_page_button import switch_page
+from streamlit_extras.app_logo import add_logo
 
 
 
@@ -16,6 +17,9 @@ def main():
     falling_speed=4,
     animation_length="infinite",
 )
+    #add a logo
+    add_logo("gallery/logo_dataflow.png", height=300)
+st.write("👈 Check out the cat in the nav-bar!")
     #add a subheader
     st.subheader('Ready to dance with your data ?')
 
