@@ -18,7 +18,7 @@ def main():
     animation_length="infinite",
 )
     #add a logo
-    add_logo("gallery/logo_dataflow.png", height=300)
+    add_logo("gallery/logo_dataflow.png", height=50)
     
     #add a subheader
     st.subheader('Ready to dance with your data ?')
