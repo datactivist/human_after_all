@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 from io import StringIO
 from streamlit_extras.metric_cards import style_metric_cards
+from streamlit_extras.switch_page_button import switch_page
 
 # Function to calculate the CSV size
 def calculate_csv_size(file):
@@ -100,7 +101,7 @@ def main():
     
     next_page = st.button("Next step ⏭️ !")
     if next_page:
-        switch_page("Duck talk")
+        switch_page("Duck talk 🦆")
 
 if __name__ == "__main__":
     main()
