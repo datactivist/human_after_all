@@ -32,8 +32,8 @@ def main():
     #add some text
     st.write('Feeling better ? Now you can start whenever you want !')
     
-    want_to_contribute = st.button("Begin 🍾 ! ")
-    if want_to_contribute:
+    next_page = st.button("Begin 🍾 ! ")
+    if next_page:
         switch_page("Let's go ⏯️ !")
 
 if __name__ == "__main__":
