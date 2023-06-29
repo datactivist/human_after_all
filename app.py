@@ -11,7 +11,7 @@ def main():
     st_player("https://youtu.be/CmSKVW1v0xM")
 
     # Embed a music from SoundCloud
-    st_player("https://soundcloud.com/imaginedragons/demons")
+    st_player("https://soundcloud.com/ristanuizuksh/sets/disclosure-you-and-me-flume")
 
 if __name__ == "__main__":
     main()
