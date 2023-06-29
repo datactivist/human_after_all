@@ -19,7 +19,7 @@ def main():
 )
     #add a logo
     add_logo("gallery/logo_dataflow.png", height=300)
-st.write("👈 Check out the cat in the nav-bar!")
+    
     #add a subheader
     st.subheader('Ready to dance with your data ?')
 
