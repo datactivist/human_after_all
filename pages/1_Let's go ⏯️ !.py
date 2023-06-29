@@ -98,7 +98,7 @@ def main():
         col3.metric(label="Dataset complexity", value=num_relationships/csv_size)
         style_metric_cards()
     
-    next_page = st.button("Next step ⏭️ ! ")
+    next_page = st.button("Next step ⏭️ !")
     if next_page:
         switch_page("2_Duck_talk 🦆")
 
