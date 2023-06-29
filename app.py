@@ -9,6 +9,7 @@ from streamlit_extras.switch_page_button import switch_page
 def main():
     st.title("Welcome to the Human-Data Interaction simulator")
     st.subheader('Ready to dance with your data ?')
+    st.write('Hello and welcome to the Human-Data Interaction (HDI) simulator. Before we begin, take time to settle down, make yourself comfortable, listen to the music below')
 
     # Embed a music from SoundCloud
     st_player("https://soundcloud.com/ristanuizuksh/sets/disclosure-you-and-me-flume")
