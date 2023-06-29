@@ -24,6 +24,12 @@ RECORD_DIR.mkdir(exist_ok=True)
 
 
 def app():
+    st.title("Duck talk")
+    st.subheader('Tell yourself about what you want to do with what yo do')
+
+    st.markdown('Corneille wrote in Polyeucte : "A raconter ses maux, souvent on les soigne", which means that talking to ourselves very often enlightens our problems and gives us key to solve them')
+
+    
     if "prefix" not in st.session_state:
         st.session_state["prefix"] = str(uuid.uuid4())
     prefix = st.session_state["prefix"]
