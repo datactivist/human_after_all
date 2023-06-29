@@ -10,7 +10,7 @@ from streamlit_lottie import st_lottie
 def main():
     #set title of the app
     st.title("Welcome to the Human-Data Interaction simulator")
-    st_lottie("https://assets3.lottiefiles.com/packages/lf20_pWTOxQsYjN.json")
+    st_lottie("https://assets3.lottiefiles.com/packages/lf20_pWTOxQsYjN.json", height = 200)
     
 
 
