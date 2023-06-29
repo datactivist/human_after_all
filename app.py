@@ -34,7 +34,7 @@ def main():
     
     want_to_contribute = st.button("Begin 🍾 ! ")
     if want_to_contribute:
-        switch_page("Let's go ▶️ !")
+        switch_page("Let's go ⏯️ !")
 
 if __name__ == "__main__":
     main()
