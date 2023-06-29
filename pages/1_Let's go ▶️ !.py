@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 from io import StringIO
+from streamlit_extras.metric_cards import style_metric_cards
 
 # Function to calculate the CSV size
 def calculate_csv_size(file):
@@ -82,6 +83,12 @@ def main():
             st.write(f"The number of relationships in the dataset is: {num_relationships}")
         except Exception as e:
             st.error(f"Error: {e}")
+    #        
+    col1, col2, col3 = st.columns(3)
+    col1.metric(label="Dataset size", value={csv_size})
+    col2.metric(label="Number of Realationships", value={num_relationships})
+    col3.metric(label="Dataset complexity", value={num_relationships}/{csv_size}, delta=0)
+    style_metric_cards()
 
 if __name__ == "__main__":
     main()
