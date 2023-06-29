@@ -28,7 +28,7 @@ def app():
         st.session_state["prefix"] = str(uuid.uuid4())
     prefix = st.session_state["prefix"]
     in_file = RECORD_DIR / f"{prefix}_input.flv"
-    out_file = RECORD_DIR / f"{prefix}_output.mp4"
+    out_file = RECORD_DIR / f"{prefix}_output.flv"
 
     def in_recorder_factory() -> MediaRecorder:
         return MediaRecorder(
