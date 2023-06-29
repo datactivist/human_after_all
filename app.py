@@ -1,3 +1,5 @@
+import streamlit as st 
+
 # Streamlit app
 def main():
     st.title("Welcome to the Human-Data Interaction simulator")
